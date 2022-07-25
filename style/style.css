@@ -22,9 +22,6 @@ a{
 }
 
 
-
-
-
 /*
     Tipografia
     14px 22px 26px 38px 50px
@@ -36,6 +33,7 @@ a{
 :root{
     --color-black: #000;
     --color-white: #fff;
+    --color-pink: #8a113a;
 }
 
 /* Header */
@@ -56,9 +54,11 @@ a{
 #container{
   text-align: center;
   width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) 
 }
 
 
@@ -73,8 +73,13 @@ a{
     border-radius: 5px;
     padding: 20px;
     font-weight: bold;
+    transition: 1s;
 }
 
+
+.navigation li > a:hover{
+  background-color: var(--color-pink);
+}
 
 /* Background Effect */
 .bg {

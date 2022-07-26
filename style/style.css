@@ -21,6 +21,10 @@ a{
 }
 
 
+h2{
+  font-size: 1rem;
+}
+
 /*
     Tipografia
     14px 22px 26px 38px 50px
@@ -35,6 +39,7 @@ a{
     --color-pink: #8a113a;
     --color-gray: #635f5f;
     --color-dark-gray: #3f3a3a;
+    --color-dark-high-gray: #353232;
 }
 
 /* Header */
@@ -92,7 +97,7 @@ a{
 } */
 
 .tittle{
-  padding: 30px;
+  padding: 20px;
   /* transform: scale(2); */
   color: var(--color-pink);
   font-weight: 700;
@@ -105,7 +110,7 @@ a{
 .content-event .tittle:after{
   position: absolute;
   content: attr(data-text);
-  padding: 30px;
+  padding: 20px;
   /* width: 100%; */
   /* height: 100%; */
   top: 0;
@@ -125,6 +130,36 @@ a{
   left: -2px;
   text-shadow: -2px 0 var(--color-pink);
   animation: glitch_after 3s 0s linear reverse infinite;
+}
+
+
+.content-event > p{
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+
+.contagem-regressiva{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.dia,
+.hora,
+.minuto,
+.segundo{
+  font-size: 2rem;
+  margin: 10px;
+  color: var(--color-white);
+}
+
+.bg-timer{
+  width: 60px;
+  border: 1px solid var(--color-white);
+  background-color: var(--color-dark-high-gray);
+  border-radius: 3px;
 }
 
 @keyframes glitch_before {
@@ -264,7 +299,7 @@ a{
 /* Background Effect */
 .bg {
     animation:slide 20s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #000000 50%, #030303 50%);
+    background-image: linear-gradient(-50deg, #000000 50%, #1a0009 50%);
     bottom:0;
     left:-50%;
     opacity:.5;

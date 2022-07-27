@@ -96,8 +96,10 @@ h2{
     text-shadow: 0px 0px 10px var(--color-pink);
 } */
 
+
 .tittle{
   padding: 20px;
+  position: relative;
   /* transform: scale(2); */
   color: var(--color-pink);
   font-weight: 700;
@@ -163,7 +165,7 @@ h2{
 }
 
 .btn-section{
-  margin: 30px 10px;
+  margin: 20px 10px;
 }
 
 .btn-config{
@@ -177,7 +179,7 @@ h2{
   font-size: 1.2rem;
   border: 2px solid var(--color-white);
   width: 140px;
-  padding: 15px;
+  padding: 15px 0;
   text-align: center;
   border-radius: 4px;
 }
@@ -448,3 +450,75 @@ h1 {
     transform:translateX(25%);
   }
 }
+
+
+
+
+/* Responsividade */
+
+@media screen and (max-width: 1115px) {
+
+  h2{
+    display: none;
+  }
+  .btn-section{
+    margin: 20px 0;
+  }
+
+  .btn-config{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .tittle{
+    font-size: 2rem;
+  }
+
+
+  .btn-organizadores{
+    background: linear-gradient(to right, var(--color-pink) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 100% 100%; 
+  }
+  
+  .btn-organizadores:hover{
+    background-position: 0% 100%;
+    box-shadow: 0px 0px 20px var(--color-pink);
+  }
+
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+
+  #container{
+    width: 70%;
+  }
+
+  .tittle{
+    font-size: 3rem;
+  }
+
+
+}
+
+
+@media screen and (max-width: 625px) {
+
+  #container{
+    width: 90%;
+  }
+
+  .tittle{
+    font-size: 2rem;
+  }
+
+}
+

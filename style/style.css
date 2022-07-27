@@ -58,12 +58,26 @@ h2{
 /* Content */
 
 #container{
-  text-align: center;
+
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
   width: 45%;
-  position: absolute;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%; */
+  /* text-align: center;
+  width: 45%;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%)  */
 }
 
 
@@ -135,7 +149,7 @@ h2{
 }
 
 
-.content-event > p{
+.content-event > p, .profile-org > p{
   font-size: 1rem;
   line-height: 24px;
 }
@@ -197,8 +211,36 @@ h2{
   /* box-shadow: 0 0 10px #ed145b; */
 }
 
+
+
+
 .btn-organizadores:hover{
   background-position: 100%;
+}
+
+
+/* Organizadores página */
+.photo-org{
+  width: 50%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px var(--color-pink);
+}
+
+
+.profile-org{
+  margin: 50px 0;
+  padding-bottom: 20px;
+}
+
+.profile-org span a i{
+  font-size: 3rem;
+  color: var(--color-pink);
+  margin: 0 10px;
+}
+
+
+strong{
+  font-size: 1.2rem;
 }
 
 @keyframes glitch_before {
@@ -506,6 +548,10 @@ h1 {
     font-size: 3rem;
   }
 
+  .photo-org{
+    width: 60%;
+  }
+  
 
 }
 
@@ -518,6 +564,10 @@ h1 {
 
   .tittle{
     font-size: 2rem;
+  }
+
+  .photo-org{
+    width: 80%;
   }
 
 }

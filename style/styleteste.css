@@ -719,7 +719,7 @@ h1 {
 
 
 
-@media screen and (max-width: 499px) {
+@media screen and (min-width: 499px) {
 
 
   .photo-org{

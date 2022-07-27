@@ -41,6 +41,10 @@ const contagemRegressiva = () => {
 
 }
 
+function notYet(){
+    alert('A sessão de regras do evento só será liberado após o fim do CountDown')
+}
+
 setInterval(contagemRegressiva, 1000);
 
 contagemRegressiva();

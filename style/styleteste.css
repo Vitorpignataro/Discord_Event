@@ -278,7 +278,7 @@ strong{
   left: 39.5%;
   width: 300px;
   height: 300px;
-  background: url(../img/foto-murilo.jpg) ;
+  background: url(../img/foto-murilo.jpg) center center no-repeat; ;
   opacity: .1;
   border-radius: 50%;
   box-shadow: 0px 0px 20px var(--color-pink);
@@ -667,18 +667,27 @@ h1 {
   }
 
   .photo-org{
-    width: 60%;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-org-2{
-    width: 60%;
+    width: 300px;
+    height: 300px;
   }
 
+  .photo-org:before{
+    left: 32%;
+  }
+
+  .photo-org-2:before{
+    left: 32%;
+  }
 
 }
 
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 500px) {
 
   #container{
     width: 90%;
@@ -689,11 +698,13 @@ h1 {
   }
 
   .photo-org{
-    width: 70%;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-org-2{
-    width: 70%;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-org:before{
@@ -702,6 +713,31 @@ h1 {
 
   .photo-org-2:before{
     left: 20%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 499px) {
+
+
+  .photo-org{
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo-org-2{
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo-org:before{
+    left: 15%;
+  }
+
+  .photo-org-2:before{
+    left: 15%;
   }
 
 }

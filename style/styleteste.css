@@ -260,14 +260,11 @@ strong{
 .photo-org:before{
   content: '';
   position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  left: 39.5%;
+  /* margin: auto; */
   width: 300px;
   height: 300px;
-  background: url(../img/foto-jose.jpg);
+  background: url(../img/foto-jose.jpg) center center no-repeat;
   opacity: .1;
   border-radius: 50%;
   box-shadow: 0px 0px 20px var(--color-pink);
@@ -278,14 +275,10 @@ strong{
 .photo-org-2:before{
   content: '';
   position: absolute;
-  top: 130%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
+  left: 39.5%;
   width: 300px;
   height: 300px;
-  background: url(../img/foto-murilo.jpg);
+  background: url(../img/foto-murilo.jpg) ;
   opacity: .1;
   border-radius: 50%;
   box-shadow: 0px 0px 20px var(--color-pink);
@@ -597,6 +590,22 @@ h1 {
 
 /* Responsividade */
 
+
+@media screen and (max-width: 1275px) {
+
+
+  .photo-org:before{
+    left: 38%;
+  }
+
+  .photo-org-2:before{
+    left: 38%;
+  }
+
+
+}
+
+
 @media screen and (max-width: 1115px) {
 
   h2{
@@ -632,6 +641,16 @@ h1 {
     box-shadow: 0px 0px 20px var(--color-pink);
   }
 
+  
+  .photo-org:before{
+    left: 35%;
+  }
+
+  .photo-org-2:before{
+    left: 35%;
+  }
+  
+
 }
 
 
@@ -654,7 +673,7 @@ h1 {
   .photo-org-2{
     width: 60%;
   }
-  
+
 
 }
 
@@ -675,6 +694,14 @@ h1 {
 
   .photo-org-2{
     width: 70%;
+  }
+
+  .photo-org:before{
+    left: 20%;
+  }
+
+  .photo-org-2:before{
+    left: 20%;
   }
 
 }

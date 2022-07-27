@@ -740,4 +740,13 @@ h2{
   left: 15%;
 }
 
+.photo-org:before{
+  animation: animateglitch 0.4s linear infinite;
+}
+
+.photo-org-2:before{
+animation: animateglitch 0.4s linear infinite;
+}
+
+
 }

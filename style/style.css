@@ -264,7 +264,7 @@ left: 39.5%;
 /* margin: auto; */
 width: 300px;
 height: 300px;
-background: url(../img/foto-jose.jpg) center center no-repeat;
+background: url(img/foto-jose.jpg) center center no-repeat;
 opacity: .1;
 border-radius: 50%;
 box-shadow: 0px 0px 20px var(--color-pink);
@@ -278,7 +278,7 @@ position: absolute;
 left: 39.5%;
 width: 300px;
 height: 300px;
-background: url(../img/foto-murilo.jpg) center center no-repeat; ;
+background: url(img/foto-murilo.jpg) center center no-repeat; ;
 opacity: .1;
 border-radius: 50%;
 box-shadow: 0px 0px 20px var(--color-pink);

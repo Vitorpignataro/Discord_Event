@@ -13,12 +13,31 @@ const contagemRegressiva = () => {
    let minuto = Math.floor((dataSoma % horas) / minutos)
    let segundo = Math.floor((dataSoma % minutos) / segundos)
 
-   document.querySelector('.dia').innerHTML = dia;
-   document.querySelector('.hora').innerHTML = hora;
-   document.querySelector('.minuto').innerHTML = minuto;
-   document.querySelector('.segundo').innerHTML = segundo;
 
 
+    if(dia < 10){
+        document.querySelector('.dia').innerHTML = '0' + dia;
+    }else{
+        document.querySelector('.dia').innerHTML = dia;
+    }
+
+    if(hora < 10){
+        document.querySelector('.hora').innerHTML = '0' + hora;
+    }else{
+        document.querySelector('.hora').innerHTML = hora;
+    }
+
+    if(minuto < 10){
+        document.querySelector('.minuto').innerHTML = '0' + minuto;
+    }else{
+        document.querySelector('.minuto').innerHTML = minuto;
+    }
+
+    if(segundo < 10){
+        document.querySelector('.segundo').innerHTML = '0' + segundo;
+    }else{
+        document.querySelector('.segundo').innerHTML = segundo;
+    }
 
 }
 

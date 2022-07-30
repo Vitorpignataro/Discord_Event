@@ -179,12 +179,14 @@ border-radius: 3px;
 }
 
 .btn-section{
+display: flex;
+justify-content: space-around;;
 margin: 20px 10px;
 }
 
 .btn-config{
 display: inline-block;
-margin: 0px 30px;
+/* margin: 0px 30px; */
 background: linear-gradient(to right, var(--color-pink) 50%, transparent 50%);
 background-size: 200%;
 background-position: 100% 100%; 
@@ -192,7 +194,7 @@ transition: 0.6s;
 color: var(--color-white);
 font-size: 1.2rem;
 border: 2px solid var(--color-white);
-width: 140px;
+width: 200px;
 padding: 15px 0;
 text-align: center;
 border-radius: 4px;
@@ -535,6 +537,7 @@ box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.25);
 display: flex;
 flex-direction: column;
 overflow: hidden;
+width: 400px;
 }
 
 .card_content {
@@ -555,6 +558,15 @@ flex: 1 1 auto;
 font-size: 0.875rem;
 line-height: 1.5;
 margin-bottom: 1.25rem;
+}
+
+.links-card{
+  font-weight: bold;
+  color: var(--color-pink);
+}
+
+.links-card:hover{
+  text-decoration: underline;
 }
 
 #footer{
@@ -611,8 +623,12 @@ font-family:monospace;
 h2{
   display: none;
 }
+
+
 .btn-section{
-  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
 }
 
 .btn-config{
@@ -621,8 +637,8 @@ h2{
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  width: 100%;
-  margin: 0 0 20px 0;
+  width: 90%;
+  margin: 0 10px 20px 10px;
 }
 
 .tittle{
@@ -656,6 +672,13 @@ h2{
 
 @media screen and (max-width: 850px) {
 
+
+  .btn-section{
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 20px auto; */
+  }
+  
 
 
 #container{

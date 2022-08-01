@@ -1,5 +1,5 @@
 const contagemRegressiva = () => {
-    const dataEvento = new Date("August 01, 2022 00:00:00").getTime();
+    const dataEvento = new Date("August 05, 2022 23:59:59").getTime();
     const dataAtual = new Date().getTime();
     const dataSoma = dataEvento - dataAtual;
 
@@ -41,9 +41,9 @@ const contagemRegressiva = () => {
 
 }
 
-function notYet(){
-    alert('A sessão de regras do evento só será liberado após o fim do CountDown')
-}
+// function notYet(){
+//     alert('A sessão de regras do evento só será liberado após o fim do CountDown')
+// }
 
 setInterval(contagemRegressiva, 1000);
 

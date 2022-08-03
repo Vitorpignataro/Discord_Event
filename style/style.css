@@ -266,7 +266,7 @@ left: 39.5%;
 /* margin: auto; */
 width: 300px;
 height: 300px;
-background: url(../img/foto-jose.jpg) center center no-repeat;
+background: url(../img/fotojose.jpg) center center no-repeat;
 opacity: .1;
 border-radius: 50%;
 box-shadow: 0px 0px 20px var(--color-pink);
@@ -280,7 +280,7 @@ position: absolute;
 left: 39.5%;
 width: 300px;
 height: 300px;
-background: url(../img/foto-murilo.jpg) center center no-repeat; ;
+background: url(../img/fotomurilo.jpg) center center no-repeat; ;
 opacity: .1;
 border-radius: 50%;
 box-shadow: 0px 0px 20px var(--color-pink);
@@ -295,6 +295,11 @@ background-size: 100%;
 .photo-org-2:hover:before{
 animation: animateglitch 0.3s linear infinite;
 }
+
+.ctf-event{
+  /* background: url(../img/rick-face.png); */
+}
+
 
 @keyframes animateglitch {
 0%{

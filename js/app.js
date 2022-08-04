@@ -1,5 +1,5 @@
 const contagemRegressiva = () => {
-    const dataEvento = new Date("August 05, 2022 23:59:59").getTime();
+    const dataEvento = new Date("August 06, 2022 12:00:00").getTime();
     const dataAtual = new Date().getTime();
     const dataSoma = dataEvento - dataAtual;
 
@@ -16,25 +16,42 @@ const contagemRegressiva = () => {
 
 
     if(dia < 10){
-        document.querySelector('.dia').innerHTML = '0' + dia;
+        console.log(dia);
+        if(dia < 0){
+            document.querySelector('.dia').innerHTML = '00';
+        }else{
+            document.querySelector('.dia').innerHTML = '0' + dia;
+        }
     }else{
         document.querySelector('.dia').innerHTML = dia;
     }
 
     if(hora < 10){
-        document.querySelector('.hora').innerHTML = '0' + hora;
+        if(hora < 0){
+            document.querySelector('.hora').innerHTML = '00';
+        }else{
+            document.querySelector('.hora').innerHTML = '0' + hora;
+        }
     }else{
         document.querySelector('.hora').innerHTML = hora;
     }
 
     if(minuto < 10){
-        document.querySelector('.minuto').innerHTML = '0' + minuto;
+        if(minuto < 0){
+            document.querySelector('.minuto').innerHTML = '00';
+        }else{
+            document.querySelector('.minuto').innerHTML = '0' + minuto;
+        }
     }else{
         document.querySelector('.minuto').innerHTML = minuto;
     }
 
     if(segundo < 10){
-        document.querySelector('.segundo').innerHTML = '0' + segundo;
+        if(segundo < 0){
+            document.querySelector('.segundo').innerHTML = '00';
+        }else{
+            document.querySelector('.segundo').innerHTML = '0' + segundo;
+        }
     }else{
         document.querySelector('.segundo').innerHTML = segundo;
     }

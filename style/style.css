@@ -37,6 +37,7 @@ font-size: 1rem;
   --color-black: #000;
   --color-white: #fff;
   --color-pink: #8a113a;
+  --color-winner: #cace00;
   --color-gray: #635f5f;
   --color-dark-gray: #3f3a3a;
   --color-dark-high-gray: #353232;
@@ -57,7 +58,7 @@ font-size: 1rem;
 
 /* Content */
 
-#container{
+#container, #container-projects{
 
 width: 100vw;
 height: 100vh;
@@ -78,6 +79,10 @@ position: relative;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%)  */
+}
+
+#container-projects{
+  width: 70%;
 }
 
 
@@ -124,21 +129,21 @@ letter-spacing: 2px;
 
 .content-event .tittle:before,
 .content-event .tittle:after{
-position: absolute;
-content: attr(data-text);
+/* position: absolute;
+content: attr(data-text); */
 /* padding: 20px 10px; */
 /* width: 100%; */
 /* height: 100%; */
-top: 0;
+/* top: 0;
 left: 0;
 color: var(--color-pink);
-overflow: hidden;
+overflow: hidden; */
 }
 
 .content-event .tittle:before{
-left: 2px;
+/* left: 2px;
 text-shadow: 1px 0 var(--color-pink);
-animation: glitch_before 5s 0s linear reverse infinite;
+animation: glitch_before 5s 0s linear reverse infinite; */
 }
 
 
@@ -295,11 +300,6 @@ background-size: 100%;
 .photo-org-2:hover:before{
 animation: animateglitch 0.3s linear infinite;
 }
-
-.ctf-event{
-  /* background: url(../img/rick-face.png); */
-}
-
 
 @keyframes animateglitch {
 0%{
@@ -574,6 +574,55 @@ margin-bottom: 1.25rem;
   text-decoration: underline;
 }
 
+
+
+.contentProjects{
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.project-card {
+  width: 90%;
+  margin-bottom: 35px;
+}
+
+.project-card > img{
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+
+.project-card > img:hover{
+  box-shadow: 0px 0px 30px var(--color-pink);
+}
+
+.project-card > h1{
+  /* text-align: left; */
+  margin: 5px;
+}
+
+.socialProjects{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.socialProjects a > i, .socialProjects i  {
+  font-size: 40px;
+  color: var(--color-pink);
+}
+
+.socialProjects i{
+  color: var(--color-winner);
+}
+
+.link-projects > a, .link-projects > i{
+  margin: 0 10px;
+}
+
 #footer{
 display: flex;
 font-size: 1rem;
@@ -604,11 +653,11 @@ font-family:monospace;
 
 
 
-
 /* Responsividade */
 
 
 @media screen and (max-width: 1275px) {
+
 
 
 .photo-org:before{
@@ -677,6 +726,9 @@ h2{
 
 @media screen and (max-width: 850px) {
 
+  .contentProjects{
+    grid-template-columns: 1fr;
+  }
 
   .btn-section{
     flex-direction: column;
@@ -748,6 +800,8 @@ h2{
 
 
 @media screen and (max-width: 499px) {
+
+
 
 
 .photo-org{
